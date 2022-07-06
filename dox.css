@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f7f7f7;
+}
+
+.sidebar{
+    width: 350px;
+    height: 100vh;
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+    position: relative;
+}
+.controls{
+    width: 24px;
+    height: 24px;
+    background-color: #685cfe;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 90px;
+    right: -12px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: 0.3s;
+
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.cl{
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    background-color: #685cfe;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 16px;
+}
+.user p{
+    font-size:13px;
+}
+
+.side_collection{
+    list-style: none;
+    margin-top: 50px;
+}
+.side_collection li{
+    margin-bottom: 10px;
+    border: 1px solid dodgerblue;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    border-radius: 10px;
+}
+.side_collection li:hover{
+    background-color:blue;
+    color: #fff;
+    cursor: pointer;
+}
+
+.side_collection li i{
+    font-style: 30px;
+    margin-right: 12px;
+}
+.side_collection li:hover i{
+    color: #fff;
+}
+.side_footer{
+    margin-top: 130px;
+    border-top: 1px solid #ddd;
+}
+
+.dark{
+    width: 90px;
+    overflow: hidden;
+}
+.dark .side_collection li span{
+    transform: translateX(50px);
+}
+.dark .controls{
+    right: 0;
+    transform:rotate(0deg);
+}
+.light{
+    background-color: #242752;
+    color: #fff;
+}
+#check{
+    display: none;
+}
+.circle{
+    width: 34px;
+    height: 18px;
+    border: 1px solid #dddd;
+    display: inline-block;
+    position: relative;
+    border-radius: 20px;
+    margin-left: 160px;
+    cursor: pointer;
+}
+.circle::before{
+    content: vhg;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
